@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SME Cashflow Coach — Live Demo Video Script</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --surface2: #243044;
+      --text: #e8edf4;
+      --muted: #94a3b8;
+      --accent: #22c55e;
+      --accent2: #3b82f6;
+      --live: #ef4444;
+      --warn: #f59e0b;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem 4rem;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle { color: var(--muted); font-size: 1rem; }
+    .live-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+      padding: 0.5rem 1rem;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid var(--live);
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #fca5a5;
+    }
+    .live-dot {
+      width: 8px; height: 8px;
+      background: var(--live);
+      border-radius: 50%;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .meta span {
+      background: var(--surface);
+      padding: 0.25rem 0.75rem;
+      border-radius: 6px;
+    }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    section h2 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+    .time {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent2);
+      margin-bottom: 1rem;
+    }
+    .vo {
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      border-left: 3px solid var(--accent2);
+    }
+    .screen {
+      background: var(--surface2);
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .screen strong {
+      display: block;
+      color: var(--warn);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .screen ul { margin-left: 1.25rem; }
+    .screen li { margin-bottom: 0.35rem; }
+    .msg {
+      display: inline-block;
+      background: #14532d;
+      color: #bbf7d0;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      font-family: ui-monospace, monospace;
+      font-size: 0.9rem;
+    }
+    .note-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid var(--accent2);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .note-box h3 {
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      color: var(--accent2);
+    }
+    .note-box ul { margin-left: 1.25rem; color: var(--muted); }
+    .note-box li { margin-bottom: 0.4rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    th { color: var(--muted); font-weight: 600; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+    @media print {
+      body { background: #fff; color: #111; padding: 1rem; }
+      section { break-inside: avoid; border: 1px solid #ccc; }
+      .live-dot { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>SME Cashflow Coach</h1>
+      <p class="subtitle">IDEALIZE 2026 · Agent Kernel use case · SDG 8 &amp; 9</p>
+      <div class="live-banner">
+        <span class="live-dot"></span>
+        LIVE DEMO — WhatsApp + Gemini + real webhook (not mock / not desk-only)
+      </div>
+      <div class="meta">
+        <span>Duration: 3–4 min</span>
+        <span>Voice-over + screen recording</span>
+        <span>Channel: WhatsApp (live bot)</span>
+      </div>
+    </header>
+
+    <div class="note-box">
+      <h3>Before you record (live setup)</h3>
+      <ul>
+        <li>Terminal 1: <code>uv run python whatsapp_app.py</code> (port 8000)</li>
+        <li>Terminal 2: <code>ngrok http 8000</code> — Meta webhook → <code>https://&lt;tunnel&gt;/whatsapp/webhook</code></li>
+        <li>Fresh <code>AK_WHATSAPP__ACCESS_TOKEN</code> in <code>.env</code> (avoid 401 errors)</li>
+        <li>Test phone added as Meta recipient; message the <strong>test business number</strong></li>
+        <li>Optional seed: <code>python desk.py open --name "Pasindu Bakery"</code> (same DB as WhatsApp)</li>
+        <li>Hide <code>.env</code> and API keys from screen</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>Scene 1 — Hook</h2>
+      <div class="time">0:00 – 0:15</div>
+      <p class="vo">
+        Meet Pasindu. He runs a small bakery in Sri Lanka. Every day he sells buns, buys flour,
+        and sometimes gives bread on customer credit. But his accounting system is still a notebook
+        and memory. By the time he notices cash is tight, stock is already out — or rent is due.
+      </p>
+      <div class="screen">
+        <strong>On screen</strong>
+        <ul>
+          <li>Title card: <em>SME Cashflow Coach</em></li>
+          <li>Quick B-roll: bakery / phone / WhatsApp icon</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scene 2 — Problem</h2>
+      <div class="time">0:15 – 0:45</div>
+      <p class="vo">
+        Micro and small businesses don't need a heavy spreadsheet or a bank app. They need something
+        simple, on WhatsApp, that turns daily messages into real numbers: balance, runway, stock,
+        and who still owes money. That's what we built.
+      </p>
+      <div class="screen">
+        <strong>On screen</strong>
+        <ul>
+          <li>Text bullets: Late stock-outs · Rent shortfalls · Forgotten customer credit</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scene 3 — Solution</h2>
+      <div class="time">0:45 – 1:15</div>
+      <p class="vo">
+        SME Cashflow Coach is a WhatsApp-first assistant built on Agent Kernel from Yaala Labs.
+        Shop owners log sales and expenses in plain language. Four specialized agents work together —
+        intake, cashflow analysis, business advice, and stock plus customer credit. All money math
+        is deterministic in code, so the AI never invents balances.
+      </p>
+      <div class="screen">
+        <strong>On screen</strong>
+        <ul>
+          <li>Architecture: WhatsApp → Agent Kernel → domain.py → SQLite</li>
+          <li>Agents: ledger_desk · cashflow_analyst · business_advisor · stock_credit_desk</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scene 4 — LIVE: Menu</h2>
+      <div class="time">1:15 – 2:00</div>
+      <p class="vo">
+        Let's see it live. Pasindu opens WhatsApp and messages the business bot. He types menu —
+        and gets an interactive list: cash summary, dashboard, advice, trends, inventory, and
+        customer credit. No forms. No training. Just tap what you need.
+      </p>
+      <div class="screen">
+        <strong>On screen — record live WhatsApp</strong>
+        <ul>
+          <li>Send: <span class="msg">menu</span></li>
+          <li>Show interactive list opening</li>
+          <li>Tap <strong>Cash summary</strong> — show balance, runway, HEALTHY / TIGHT / CRITICAL</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scene 5 — LIVE: Log sale &amp; credit</h2>
+      <div class="time">2:00 – 2:45</div>
+      <p class="vo">
+        Now he logs today the way he already talks: "Sold twelve buns, twenty-four hundred."
+        The system records the sale and updates cash. A customer, Amara, takes bread on credit.
+        Pasindu sends: "Credit Amara five hundred bread." That's tracked separately — cash doesn't
+        increase until she pays.
+      </p>
+      <div class="screen">
+        <strong>On screen — record live WhatsApp</strong>
+        <ul>
+          <li>Send: <span class="msg">Sold 12 buns 2400</span></li>
+          <li>Wait for bot reply with updated balance</li>
+          <li>Send: <span class="msg">credit Amara 500 bread</span></li>
+          <li>Optional: <span class="msg">paid Amara 200</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scene 6 — LIVE: Insights</h2>
+      <div class="time">2:45 – 3:20</div>
+      <p class="vo">
+        From the menu he checks inventory and customer credit. He asks what he should do next —
+        and gets practical advice from the live ledger. If he asks, "Can I buy flour for three
+        thousand?" — the coach checks affordability against runway, not guesswork. One message in.
+        One clear answer out.
+      </p>
+      <div class="screen">
+        <strong>On screen — pick 2–3 live actions</strong>
+        <ul>
+          <li>Menu → <strong>Customer credit</strong> or <strong>Inventory</strong></li>
+          <li>Menu → <strong>What should I do?</strong></li>
+          <li>Or send: <span class="msg">Can I buy flour for 3000?</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scene 7 — Agent Kernel &amp; fallback</h2>
+      <div class="time">3:20 – 3:45</div>
+      <p class="vo">
+        This project lives in the Agent Kernel repository under use-cases slash sme-cashflow-coach.
+        It uses Agent Kernel for WhatsApp webhooks, session memory, multi-agent routing, and Gemini
+        via Google ADK. Judges can also run desk.py with no API key — same SQLite ledger — to verify
+        the math offline.
+      </p>
+      <div class="screen">
+        <strong>On screen (optional 10 sec cutaway)</strong>
+        <ul>
+          <li>Quick terminal: <code>python desk.py dashboard</code></li>
+          <li>Or README / GitHub folder</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scene 8 — Close</h2>
+      <div class="time">3:45 – 4:00</div>
+      <p class="vo">
+        SME Cashflow Coach gives micro-SME owners a daily cash discipline tool on the app they
+        already use — WhatsApp. Built for SDG 8 and SDG 9. Not a bank. Not tax advice. Just honest
+        numbers and better decisions. Thank you.
+      </p>
+      <div class="screen">
+        <strong>On screen</strong>
+        <ul>
+          <li>End card: GitHub fork URL · Team names · kernel.yaala.ai</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Live recording checklist</h2>
+      <table>
+        <thead>
+          <tr><th>Priority</th><th>Capture live on WhatsApp</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Must</td><td><span class="msg">menu</span> → tap one item → one free-text log</td></tr>
+          <tr><td>Strong</td><td><span class="msg">credit Amara 500</span> + advice or dashboard</td></tr>
+          <tr><td>Strong</td><td><span class="msg">Can I buy flour for 3000?</span></td></tr>
+          <tr><td>Backup</td><td><code>desk.py dashboard</code> if WhatsApp slow (same data)</td></tr>
+          <tr><td>Avoid</td><td>Showing .env, tokens, or ngrok URL with secrets</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Recording tips</h2>
+      <ul style="margin-left: 1.25rem; color: var(--muted); font-size: 0.95rem;">
+        <li>Speak slowly — pause while typing on phone</li>
+        <li>Wait for <strong>one</strong> bot reply before the next message (dedupe is on)</li>
+        <li>Record phone screen + optional terminal in corner for “live” proof</li>
+        <li>If Gemini rate-limits, cut to desk.py for 10 seconds, then back to WhatsApp</li>
+      </ul>
+    </section>
+
+    <footer>
+      SME Cashflow Coach · use-cases/sme-cashflow-coach · Agent Kernel / Yaala Labs<br />
+      Open this file in a browser for teleprompter-style recording prep.
+    </footer>
+  </div>
+</body>
+</html>

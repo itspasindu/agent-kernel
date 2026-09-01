@@ -1,0 +1,13 @@
+session:
+  type: in_memory
+  cache:
+    size: 256
+
+logging:
+  ak:
+    level: INFO
+
+whatsapp:
+  # Keep empty to avoid an extra outbound call before the agent reply (reduces latency/retries).
+  agent_acknowledgement: ""
+  agent: ledger_desk

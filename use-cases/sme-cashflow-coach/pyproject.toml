@@ -1,0 +1,33 @@
+[project]
+name = "sme-cashflow-coach"
+version = "0.1.0"
+description = "Agent Kernel WhatsApp coach for micro-SME cashflow (SDG 8 / 9) using Gemini"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "agentkernel[cli,adk,api,whatsapp,aws]>=0.8.1",
+    "pyreadline3>=3.5.6",
+]
+
+[dependency-groups]
+dev = [
+    "agentkernel[test]>=0.8.1",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+    "pytest>=8.0.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.black]
+line-length = 120
+target-version = ["py312"]
