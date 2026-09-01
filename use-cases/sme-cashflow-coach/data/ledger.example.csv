@@ -1,0 +1,14 @@
+shop_name,owner_name,shop_category,kind,amount,category,note,day
+Nimal Bakery,Nimal Perera,bakery,sale,2400,buns,12 buns,2026-08-18
+Nimal Bakery,Nimal Perera,bakery,sale,1800,tea,tea sales,2026-08-18
+Nimal Bakery,Nimal Perera,bakery,expense,1500,flour,flour 5kg,2026-08-18
+Nimal Bakery,Nimal Perera,bakery,sale,3200,buns,16 buns,2026-08-19
+Nimal Bakery,Nimal Perera,bakery,expense,800,gas,cylinder top-up,2026-08-19
+Nimal Bakery,Nimal Perera,bakery,sale,2100,buns,morning sales,2026-08-20
+Nimal Bakery,Nimal Perera,bakery,expense,2200,supplies,packaging + sugar,2026-08-20
+Nimal Bakery,Nimal Perera,bakery,sale,1500,tea,evening tea,2026-08-21
+Nimal Bakery,Nimal Perera,bakery,expense,5000,rent,weekly stall rent share,2026-08-21
+Nimal Bakery,Nimal Perera,bakery,sale,2800,buns,weekend rush,2026-08-22
+Nimal Bakery,Nimal Perera,bakery,expense,1200,flour,flour top-up,2026-08-22
+Nimal Bakery,Nimal Perera,bakery,sale,900,other,odd sales,2026-08-23
+Nimal Bakery,Nimal Perera,bakery,expense,3000,personal,owner draw,2026-08-23
